@@ -92,12 +92,13 @@ span{
     font-weight: bold;
     padding: 5px;
     cursor: pointer;
+    color :black
 
 }
-.btn1{
+.crousel_btn1{
     left: 5px;
 }
-.btn2{
+.crousel_btn2{
     right: 5px;
 }
 

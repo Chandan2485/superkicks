@@ -56,8 +56,8 @@ let arr = [
 ];
 
 let container = document.querySelector(".product_container");
-let prepbtn = document.querySelector(".btn1");
-let nextpbtn = document.querySelector(".btn2");
+let prepbtn = document.querySelector(".crousel_btn1");
+let nextpbtn = document.querySelector(".crousel_btn2");
 
 let flagp = 4;
 function showproduct() {
