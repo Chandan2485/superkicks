@@ -14,10 +14,10 @@ let flag=0
 function show(){
     storesindia.innerHTML=null
  let storeimg=`
-    <div> <a href="../stores/store.html"><img src="../img/BENGALURU-1-1.jpg" alt="" class="img"></a></div>
-            <div> <a href="../stores/store.html"><img src="../img/DELHI.jpg" alt="" class="img"></a></div>
-            <div> <a href="../stores/store.html"><img src="../img/guwahati-1.jpeg" alt="" class="img"></a></div>
-            <div> <a href="../stores/store.html"><img src="../img/MUMBAI-2.jpg" alt="" class="img"></a></div> 
+    <div> <a href="./stores/store.html"><img src="../img/BENGALURU-1-1.jpg" alt="" class="img"></a></div>
+            <div> <a href="./stores/store.html"><img src="../img/DELHI.jpg" alt="" class="img"></a></div>
+            <div> <a href="./stores/store.html"><img src="../img/guwahati-1.jpeg" alt="" class="img"></a></div>
+            <div> <a href="./stores/store.html"><img src="../img/MUMBAI-2.jpg" alt="" class="img"></a></div> 
     `
     storesindia.innerHTML=storeimg
 }
@@ -68,12 +68,4 @@ function pevshow(){
 }
 nextbtn.addEventListener("click",nextshow)
 pevbtn.addEventListener("click",pevshow)
-
-
-
-
-
-
-
-
 

@@ -38,4 +38,3 @@ setInterval(show_image, 3000);
 
 
 
-
