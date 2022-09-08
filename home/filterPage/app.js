@@ -2,7 +2,7 @@ let mainTag=document.querySelector('main')
 let mainContainer=document.querySelector('.main-container')
 let shoppingCards=document.querySelector('.shop')
 
-let imgArrayOfObject=[{
+ let imgArrayOfObject=[{
     id:'201',
     img:['./newArrivalImages/img1.jpeg','img1a.jpeg','img1b.jpeg','img1c.jpeg','img1d.jpeg','img1e.jpeg','img1f.jpeg'],
     heatTag:'New Arrival',
@@ -201,7 +201,9 @@ let imgArrayOfObject=[{
  function renderProducts(){
     imgArrayOfObject.forEach((product)=>{
         shoppingCards.innerHTML+=` <div class="item">
-        <img src=${product.img[0]} alt="" id="${product.id}">
+        <div class="item-img">
+        <a href="../productInfo/productDetail.html"> <img src=${product.img[0]} alt="" id="${product.id}"></a>
+        <div/>
         <div class="details">
             <div class="heat-tag">${product.heatTag}</div>
             <small class="brand">${product.brand}</small>

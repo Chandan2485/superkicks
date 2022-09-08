@@ -1,5 +1,6 @@
-body{
-    display: flex;
+.total{
+    display: grid;
+    grid-template-columns: 220px 1fr;
     background-color: #fafafa;
     /* position: relative; */
 }
@@ -41,14 +42,22 @@ border: none;
   /* main container */
   .shop{
       display: grid;
-      grid-template-columns: repeat(3,223px);
-      column-gap:250px
+      grid-template-columns:1fr 1fr 1fr;
+      column-gap:25px;
+      border: 2px solid black;
       }
+      .item-img{
+        border: 2px solid black;
+      }
+
+
+
+
       .main-container{
           margin-top: 50px;
       }
       .main-container img{
-          width:400px;
+          width:100%;
       }
       .sortby{
           margin-bottom: 20px;
