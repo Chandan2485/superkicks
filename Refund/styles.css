@@ -6,12 +6,11 @@
 
 .container {
     max-width: 100vw;
-    /* margin-bottom: 20px; */
 }
 
 .nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
@@ -168,8 +167,8 @@ span {
 .user {
     padding: 4px 9px;
     border-right: 1px solid lightgray;
-    color: white;
     font-size: 13px;
+    color: white;
 }
 
 .bag {
@@ -201,28 +200,6 @@ span {
     padding-right: 4px;
     font-size: 12px;
 }
-
-/*=============================== for hover on search icon ============================== */
-
-
-.itembox{
-    display: block;
-    position: absolute;
-    margin-top: 23px;
-    margin-left: -130px;
-    padding: 7px;
-    box-shadow: 0 0.1px 0.2px 0.1px black;
-    outline: none;
-}
-
-.greater-in-input{
-    display: block;
-    position: absolute;
-    margin-top: 35px;
-    margin-left: 32px;
-    color: black;
-}
-
 
 /*=============================== for hover on search icon ============================== */
 
@@ -284,8 +261,6 @@ span {
     font-size: 12px;
 }
 
-
-
 /*============================================== footer part =================================================================== */
 
 .footerbox {
@@ -306,6 +281,11 @@ span {
     width: 200px;
     padding: 10px;
 }
+
+.box1 a,.box2 a,.box3 a,.box4 a{
+    display: block;
+}
+
 
 .box4{
     width: 250px;
@@ -329,6 +309,7 @@ span {
     font-size: 10px;
     word-spacing: 5px;
     letter-spacing: 1px;
+    margin-bottom: 13px;
 }
 
 .footerbox .input{
@@ -347,6 +328,7 @@ span {
 }
 
 .footerbox a:hover{
+    width: max-content;
     border-bottom: 1px solid lightgray;
 }
 
@@ -354,4 +336,34 @@ span {
     margin-top: 25px;
     font-size: 11px;
     color: white;
+}
+
+
+/* =================== Refund CSS ================================*/
+
+.refund{
+    width: 65%;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.refund-heading{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.refund-para1,.refund-para2,.refund-para3,.cancel_para{
+    /* font-size: 20px; */
+    line-height: 1.3;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.refund-para2,.refund-para3{
+    font-weight: bold;
+}
+.cancellation{
+    font-weight: normal;
+    font-size: 30px;
+    margin: 15px 0;
+    margin-left: 10px;
 }
