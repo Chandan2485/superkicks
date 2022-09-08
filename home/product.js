@@ -81,26 +81,25 @@ showproduct()
 prepbtn.addEventListener("click", next);
 nextpbtn.addEventListener("click", next);
 
+  
+let count = 1;
 function next() {
   container.innerHTML = "";
-    for (let i = 0; i<4; i++) {
-      if(flagp==arr.length){
-        flagp=0
-        i--
-      }
-      else{
-        let html = ` 
-        <div class="product">
-                    <img src="${arr[flagp].img}" alt="" class="product_img">
-                    <p class="brand">${arr[flagp].Brand}</p>
-                    <p class="name">${arr[flagp].name}</p>
-                    <p class="price">${arr[flagp].price}</p>
-                </div>
-        `;
-        container.innerHTML += html;
-        flagp++
-      }
-     
-    }
+  for (let i = count; i < count + 4; i++) {
+    let html = `
+      <div class="product">
    
-  } 
+      <a href="#"><img src="${arr[i].img}" alt="" class="product_img"></a>
+                   <p class="brand">${arr[i].Brand}</p>
+                  <p class="name">${arr[i].name}</p>
+                  <p class="price">${arr[i].price}</p>
+              </div>
+      `;
+    container.innerHTML += html;
+  }
+  count++;
+  if (count == 6) {
+    count = 0;
+  }
+  console.log(count);
+}
