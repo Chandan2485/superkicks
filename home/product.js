@@ -59,7 +59,7 @@ let container = document.querySelector(".product_container");
 let prepbtn = document.querySelector(".crousel_btn1");
 let nextpbtn = document.querySelector(".crousel_btn2");
 
-let flagp = 4;
+
 function showproduct() {
   container.innerHTML = "";
   for (let i = 0; i<4; i++) {
